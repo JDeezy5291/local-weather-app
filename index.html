@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <main class="current_weather">
+        <h1 class="main_title">
+            latest weather in philadelphia
+        </h1>
+        <div class="date">
+            <h2 class="section_title section_title_date">Sol 377</h2>
+            <p class="date_day">September 26</p>
+        </div>
+        <div class="temp">
+            <h2 class="section_title"></h2>
+            <p class="reading">High: 75°F</p>
+            <p class="reading">Low: 68°F</p>
+        </div>
+        <div class="wind">
+            <h2 class="section_title">Wind</h2>
+            <p class="reading">75 mph</p>
+            <div class="wind_dir">
+                <p class="sr-only">45deg</p>
+                <div class="wind_arrow"></div>
+            </div>
+        </div>
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestiae nam iusto fugiat animi necessitatibus provident tempora magni exercitationem? Nesciunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, molestiae?</p>
+        </div>
+        <div class="unit">
+            <label for="cel">°C</label>
+            <input type="radio" id="cel" name="unit">
+            <button class="unit_toggle"></button>
+            <label for="fah">°F</label>
+            <input type="radio" id="fah" name="unit" checked>
+        </div>
+    </main>
+    <div class="previous_weather">
+        <label for="weather_toggle" class="show_prev_weather_label">
+            &#8593; 
+            <span class="sr-only">Show previous weather</span>
+        </label>
+        <input type="checkbox" id="weather_toggle"
+        class="show_prev_weather_toggle">
+        <h2 class="main_title">Previous 7 days</h2>
+        <div class="previous_days">
+            <div class="previous_day">
+                <h3 class="previous_day_day">sol 312</h3>
+                <p class="previous_day_date">December 81</p>
+                <p class="previous_day_temp">High: 75°F</p>
+                <p class="previous_day_temp">Low: 68°F</p>
+                <button class="previous_day_info">More info</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
